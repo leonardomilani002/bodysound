@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME - Centro Fitness Bodysound</title>
+    <meta
+      name="description"
+      content="BodySound: la tua palestra con corsi Les Mills, Spinning, Sala Fitness attrezzata e Zona Benessere. Scopri i nostri abbonamenti e orari."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://googleusercontent.com/maps.google.com/7"
+    />
+  </head>
+  <body class="bg-light">
+    <a
+      class="visually-hidden-focusable p-3 bg-primary text-white"
+      href="#main-content"
+      >Salta al contenuto</a
+    >
+
+    <header class="sticky-top shadow-sm bg-white" role="banner">
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-white container-fluid"
+        aria-label="Principale"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bolder fs-4 text-primary" href="/"
+            ><img
+              src="media/logo_2016-removebg-preview.webp"
+              height="70px"
+              alt="Logo Bodysound"
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0" role="menubar">
+              <li class="nav-item" role="none">
+                <a role="menuitem" class="nav-link" href="/corsi.html">Corsi</a>
+              </li>
+              <li class="nav-item" role="none">
+                <a role="menuitem" class="nav-link" href="/prezzi.html"
+                  >Prezzi & Abbonamenti</a
+                >
+              </li>
+              <li class="nav-item" role="none">
+                <a role="menuitem" class="nav-link" href="/orari-sede.html"
+                  >Orari & Sede</a
+                >
+              </li>
+              <li class="nav-item ms-md-3" role="none">
+                <a
+                  role="menuitem"
+                  href="/contatti.html"
+                  class="btn btn-primary custom-focus-ring"
+                  >Contatti</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" role="main">
+      <section
+        class="position-relative d-flex align-items-center justify-content-center text-white"
+        style="min-height: 70vh"
+        aria-labelledby="hero-title"
+      >
+        <img
+          src="./media/foto_hero.webp"
+          alt="Foto della sala fitness"
+          class="position-absolute w-100 h-100 object-fit-cover"
+          style="z-index: -1"
+          fetchpriority="high"
+        />
+        <div
+          class="position-absolute w-100 h-100 bg-black opacity-50"
+          style="z-index: -1"
+        ></div>
+
+        <div class="container text-center py-5" style="z-index: 1">
+          <h1
+            id="hero-title"
+            class="display-3 display-md-1 fw-bold mb-3 text-uppercase"
+          >
+            BENVENUTO IN BODYSOUND
+          </h1>
+          <p class="fs-4 fs-md-3 mb-5">
+            Trasforma il tuo corpo e libera la mente con il meglio del fitness a
+            Castelfranco Veneto.
+          </p>
+          <a
+            href="/corsi.html"
+            class="btn btn-lg btn-secondary fw-bold shadow-lg custom-focus-ring"
+          >
+            Scopri tutti i Corsi
+          </a>
+        </div>
+      </section>
+
+      <section class="container my-5 py-md-4" aria-labelledby="usp-heading">
+        <h2 id="usp-heading" class="text-center h3 fw-bold mb-5 text-text">
+          Cosa Troverai da Noi
+        </h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div
+              class="p-4 text-center bg-light rounded-3 shadow-sm h-100 d-flex flex-column justify-content-center"
+            >
+              <span class="fs-2 text-primary mb-3" aria-hidden="true">🏋️</span>
+              <h3 class="h5 fw-bold mb-2">Oltre 20 Corsi di Gruppo</h3>
+              <p class="text-secondary">
+                Dallo Spinning® ai programmi Les Mills come BODYPUMP® e
+                BODYATTACK®. Risultati garantiti.
+              </p>
+              <a
+                href="/corsi.html"
+                class="text-primary text-decoration-none mt-auto custom-focus-ring"
+                >Vedi il planning →</a
+              >
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="p-4 text-center bg-light rounded-3 shadow-sm h-100 d-flex flex-column justify-content-center"
+            >
+              <span class="fs-2 text-primary mb-3" aria-hidden="true">💪</span>
+              <h3 class="h5 fw-bold mb-2">Sala Attrezzata Technogym</h3>
+              <p class="text-secondary">
+                Attrezzature di ultima generazione per l'allenamento cardio e la
+                tonificazione muscolare.
+              </p>
+              <a
+                href="#"
+                class="text-primary text-decoration-none mt-auto custom-focus-ring"
+              ></a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="p-4 text-center bg-light rounded-3 shadow-sm h-100 d-flex flex-column justify-content-center"
+            >
+              <span class="fs-2 text-primary mb-3" aria-hidden="true">🧖‍♀️</span>
+              <h3 class="h5 fw-bold mb-2">Zona Benessere Inclusa</h3>
+              <p class="text-secondary">
+                Concludi il tuo allenamento con l'area relax, che include Sauna
+                e Bagno Turco.
+              </p>
+              <a
+                href="/prezzi.html"
+                class="text-primary text-decoration-none mt-auto custom-focus-ring"
+                >Scopri i pacchetti →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-primary text-white py-5 text-center"
+        aria-labelledby="cta-heading"
+      >
+        <div class="container">
+          <h2 id="cta-heading" class="h3 fw-bold mb-3">
+            Abbonamenti Flessibili per Ogni Esigenza
+          </h2>
+          <p class="fs-5 mb-4">
+            Scegli la formula che fa per te: ingressi, mensile, annuale o
+            l'opzione <strong>UNLIMITED</strong>.
+          </p>
+          <a
+            href="/prezzi.html"
+            class="btn btn-lg btn-light text-primary fw-bold shadow-lg custom-focus-ring"
+          >
+            Guarda il Listino Prezzi Completo
+          </a>
+        </div>
+      </section>
+
+      <section class="container my-5 py-md-4">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="p-4 border rounded-3 h-100 shadow-sm">
+              <h3 class="h4 fw-bold mb-3">Orari di Apertura (Inverno)</h3>
+              <ul class="list-unstyled mb-4 text-secondary">
+                <li><strong>Lun – Ven:</strong> 06:30 – 23:00</li>
+                <li><strong>Sabato:</strong> 08:00 – 17:00</li>
+                <li><strong>Domenica:</strong> 10:00 – 13:00</li>
+              </ul>
+              <a
+                href="/orari-sede.html"
+                class="text-primary text-decoration-none custom-focus-ring"
+                >Vedi orari completi e mappa →</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-4 border rounded-3 h-100 shadow-sm">
+              <h3 class="h4 fw-bold mb-3 text-text">
+                Dove fare il certificato medico?
+              </h3>
+              <p class="mb-3 text-secondary">
+                Il certificato medico in corso di validità è
+                <strong>assolutamente obbligatorio</strong> per l'accesso (vedi
+                regolamento in segreteria). Puoi ottenerlo qui nei centri
+                convenzionati:
+              </p>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a
+                    href="https://booking.omedical.it/"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-primary text-decoration-none custom-focus-ring"
+                    >OMedical</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://centrodimedicina.com/form-di-contatto/prenotazioni/"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-primary text-decoration-none custom-focus-ring"
+                    >Il Centro di Medicina</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://www.studimediciistrana.it/prenotazione/"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-primary text-decoration-none custom-focus-ring"
+                    >Studi Medici Istrana</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.polimedicafisiohome.it/servizi/medicina-dello-sport/"
+                    target="_blank"
+                    rel="noopener"
+                    class="text-primary text-decoration-none custom-focus-ring"
+                    >Polimedica Fisiohome</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5" role="contentinfo">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <span class="fw-bolder fs-5 text-primary mb-3 d-block"
+              >BodySound</span
+            >
+            <address class="small text-white-50">
+              Via Staizza 64, Castelfranco Veneto (TV)
+              <br />
+              <a
+                href="mailto:info@bodysound.it"
+                class="text-white-50 text-decoration-none custom-focus-ring"
+                >Email: info@bodysound.it</a
+              >
+              <br />
+              tel:+390423721650
+            </address>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <h5 class="fw-bold mb-3">Navigazione</h5>
+            <ul class="list-unstyled small">
+              <li>
+                <a
+                  href="/corsi.html"
+                  class="text-white-50 text-decoration-none custom-focus-ring"
+                  >Corsi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/prezzi.html"
+                  class="text-white-50 text-decoration-none custom-focus-ring"
+                  >Prezzi & Abbonamenti</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/orari-sede.html"
+                  class="text-white-50 text-decoration-none custom-focus-ring"
+                  >Orari & Sede</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contatti.html"
+                  class="text-white-50 text-decoration-none custom-focus-ring"
+                  >Contatti</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-4">
+            <h5 class="fw-bold mb-3">Legali & Social</h5>
+            <ul class="list-unstyled small mb-3">
+              <li>
+                <a
+                  href="/privacy.html"
+                  class="text-white-50 text-decoration-none custom-focus-ring"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/cookie.html"
+                  class="text-white-50 text-decoration-none custom-focus-ring"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex gap-2 fs-3">
+              <a
+                href="https://www.instagram.com/bodysound_castelfranco/"
+                target="_blank"
+                aria-label="Seguici su Instagram"
+                class="text-secondary"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+
+              <a
+                href="https://www.facebook.com/bodysound"
+                target="_blank"
+                aria-label="Seguici su Facebook"
+                class="text-secondary"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a
+                href="https://api.whatsapp.com/send?phone=393938773444"
+                target="_blank"
+                aria-label="Contattaci su WhatsApp"
+                class="text-secondary"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+
+              <a
+                href="https://t.me/+393938773444"
+                target="_blank"
+                aria-label="Unisciti al canale Telegram"
+                class="text-secondary"
+              >
+                <i class="bi bi-telegram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 mb-3 border-white-50" />
+        <div class="text-center small text-white-50">
+          &copy; 2025 <strong>Fitness Centers srls</strong> P.IVA 05040030263
+
+          <span aria-hidden="true">|</span> Realizzato da:
+          <a
+            href="URL_TUO_SITO"
+            target="_blank"
+            rel="noopener"
+            class="text-white-50 text-decoration-none custom-focus-ring hover-primary"
+          >
+            Leonardo Milani
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="http://googleusercontent.com/maps.google.com/4"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

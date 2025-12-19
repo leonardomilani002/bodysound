@@ -1,0 +1,124 @@
+/* Custom CSS per allineare Bootstrap agli standard BodySound/WCAG */
+
+:root {
+  --bs-primary: #ff6600; /* Arancione BodySound */
+  --bs-primary-rgb: 255, 102, 0;
+  --bs-secondary: #00a388; /* Accent (verde/teal) */
+  --bs-text: #212121; /* Testo scuro */
+  --bs-primary-dark: #cc5200;
+  --bs-background: #f7f7f7;
+}
+
+/* Override delle classi Bootstrap per usare il brand color */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #ffffff; /* Testo bianco su Primary (Pass WCAG AA) */
+}
+.btn-primary:hover {
+  background-color: var(--bs-primary-dark);
+  border-color: var(--bs-primary-dark);
+}
+
+/* Pulsante Secondary (per Hero Section, alto contrasto) */
+.btn-secondary {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: var(--bs-primary);
+}
+
+/* Focus Visibile (WCAG AA 2.4.7) - Sovrascrive l'outline standard di Bootstrap */
+.custom-focus-ring:focus,
+.nav-link:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.5);
+}
+
+/* Utilità per il testo (usato su H2, H3) */
+.text-text {
+  color: var(--bs-text) !important;
+}
+
+/* Hover per gli elementi del Footer */
+.hover-primary:hover {
+  color: var(--bs-primary) !important;
+}
+
+#hero-title {
+  color: var(--bs-primary-dark);
+}
+#corsi-hero-heading {
+  color: var(--bs-primary);
+}
+
+/* Aggiungere al custom-styles.css o un blocco <style> se necessario */
+.card-img-square {
+  /* Forzare un contenitore con aspect ratio 1:1 o altezza fissa */
+  width: 100%;
+  /* Utilizzo di padding-top per aspect ratio 1:1, poi l'immagine come absolute */
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.card-img-square img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assicura che l'immagine copra senza distorcersi */
+}
+
+#tabella-orari {
+  display: none;
+}
+
+.table-primary {
+  /* Colore del testo (bianco per contrastare l'arancione) */
+  color: #ffffff;
+  /* Colore del bordo */
+  border-color: var(--bs-primary);
+
+  /* Sovrascrivi le variabili interne di Bootstrap per il thead */
+  --bs-table-bg-state: var(--bs-primary);
+  --bs-table-border-color: var(--bs-primary-dark);
+}
+
+/* Forzare lo sfondo per la riga thead (assicura che funzioni anche sui browser meno recenti o in casi di specificità) */
+.table-primary th,
+.table-primary td {
+  background-color: var(--bs-primary) !important;
+  border-color: inherit;
+}
+
+.orario {
+  list-style-type: none;
+}
+
+.orario:nth-child(odd) {
+  border-left: 5px solid var(--bs-primary);
+}
+.orario:nth-child(even) {
+  border-left: 5px solid var(--bs-primary-dark);
+}
+
+.giorni {
+  background-color: var(--bs-primary);
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #tabella-orari {
+    display: block;
+  }
+
+  #lista-orari {
+    display: none;
+  }
+}
